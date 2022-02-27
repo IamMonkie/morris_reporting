@@ -7,7 +7,7 @@
     <title>Morris Reporting</title>
 
     <!-- -------------------------------- style -------------------------------- -->
-    <link rel="stylesheet" href="/morris_reporting/CSS/reportingStyle.css" />
+    <link rel="stylesheet" href="/CSS/reportingStyle.css" />
 
     <link
       rel="stylesheet"
@@ -21,18 +21,39 @@
     <!-- ------------------------------- Navbar -------------------------------- -->
     <div class="navbar">
       <div class="container flex">
-        <h1 class="logo">Morris</h1>
+        <img
+          class="logo"
+          src="/CSS/Assets/Images/reportLogo.png"
+          alt="Morris Logo"
+        />
+
         <nav>
           <ul>
+            
             <li>
-              <a href="/index.html">Reports</a>
-            </li>
+            <a href="index.html"><i class="fas fa-regular fa-house fa-2x"></i></a></li>
+            
             <li>
-              <a href="/profile.html">Profile</a>
-            </li>
+                <a href="help.html"><i class="fas fa-regular fa-circle-info fa-2x"></i></a></li>
+                    
+           
           </ul>
         </nav>
+        <a href="signIn.html"><i class="fas fa-regular fa-user fa-2x"></i>Sign In</a>
       </div>
+    </div>
+    <!-- --------------------------- Welcome Content --------------------------- -->
+    <div class="welcome">
+      <div class="container grid">
+          <div class="welcomeText">
+            Reporting by Morris
+            <p>
+          <h2>Providing customers with accurate, real-time analytics, customizable attributes, and custom reports delivered right to your team. <a href="signIn.html">Sign in</a> to get started.</h2>
+          </p></div>
+        <div class="welcomeChicken"><img class="chickenWalk" src="/CSS/Assets/Images/chickenWalk.gif" alt="chicken walk" />
+      </div>
+      <a href="signIn.html"><button>Sign In</button></a>
+    </div>
     </div>
   </body>
 </html>

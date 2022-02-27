@@ -1,5 +1,8 @@
-@import url("https://fonts.google.com/share?selection.family=Poppins:wght@300");
+@import url("https://fonts.google.com/share?selection.family=Poppins:wght@300&display=swap");
 
+:root {
+  --primaryColor: rgb(112, 112, 112);
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,53 +10,37 @@
 }
 
 body {
-  font-family: "poppins" sans-serif;
+  font-family: "poppins", sans-serif;
+  color: var(--primaryColor);
 }
 
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--primaryColor);
 }
 
-/* --------------------------------- Navbar --------------------------------- */
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: auto; /*removes margin set by nested elements */
+h1,
+h2 {
+  line-height: 1.2;
+  margin: 10px 0;
 }
 
-.navbar .flex {
-  justify-content: space-between;
+p {
+  margin: 10px 0;
 }
 
-.navbar {
-  background-color: #003e69;
-  color: #ffff;
-  height: 80px;
-  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.3);
-}
-
-.logo {
-  margin: 0 10px;
-}
-
-.navbar ul {
-  display: flex;
-  margin: 0 10px;
-  list-style: none;
-}
-
-.navbar a {
-  color: #ffff;
-  padding: 10px;
-  margin: 0 5px;
-}
-.navbar a:hover {
-  border-bottom: 2px #ffff solid;
+img {
+  width: 100%;
 }
 
 /* -------------------------------- utilities ------------------------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -61,19 +48,66 @@ a {
   height: 100%;
 }
 
-/* ---------------------------- navbar container ---------------------------- */
-.docked-view .content-wrapper {
-  width: 100%;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  background-color: #003e69;
 }
 
-/* --------------------------------- navbar --------------------------------- */
-.psc-Header\/Header {
-  background-color: #003e69;
-  color: #e7f5ff;
-  font-size: 14px;
+/* --------------------------------- Navbar --------------------------------- */
+
+.navbar {
+  background-color: #748da0;
+  color: var(--primaryColor);
+  height: 80px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.logo {
+  width: 250px;
+}
+
+.navbar ul {
+  color: var(--primaryColor);
+  display: flex;
   margin: 0 10px;
-  padding: 20px;
-  max-width: 1200px;
+  list-style: none;
+}
+
+.navbar a {
+  color: var(--primaryColor);
+  padding: 10px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: 2px var(--primaryColor) solid;
+}
+
+/* --------------------------------- content -------------------------------- */
+
+.welcome {
+  height: 400px;
+  /* background-color: rgb(75, 209, 243); */
+  /* color: #fff; */
+  position: relative;
+  margin: 200px;
+}
+.chickenWalk {
+  width: 200px;
+}
+.welcomeText {
+  /* margin: 200px 0; */
+}
+.welcomeText h2 {
+  font-weight: 700;
+}
+.welcomeText a {
+  font-weight: 900;
 }
