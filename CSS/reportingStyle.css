@@ -27,7 +27,7 @@ h2 {
 }
 
 p {
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 img {
@@ -49,6 +49,7 @@ img {
   height: 100%;
 }
 
+/*
 .welcome-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -85,7 +86,7 @@ img {
   grid-row: 2;
   width: 200px;
 }
-
+*/
 .blend-mode-multiply {
   mix-blend-mode: multiply;
 }
@@ -129,8 +130,8 @@ img {
   /* height: 400px; */
   /* background-color: rgb(75, 209, 243); */
   /* color: #fff; */
-  position: relative;
-  margin: 200px;
+  /* position: relative; */
+  /* margin: 200px; */
 }
 .chickenWalk {
   /* width: 200px; */
@@ -138,10 +139,77 @@ img {
 /*
 .welcomeText {
    margin: 200px 0; 
-}*/
+}
 .welcomeText h2 {
   font-weight: 700;
 }
 .welcomeText a {
   font-weight: 900;
+}
+*/
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #04a2fe; */
+  height: 600px;
+  width: 1200px;
+  margin-left: 0px;
+  margin-top: 200px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.chickenWalk {
+  /* width: 200px; */
+}
+
+.welcomeText h7 {
+  /* border: solid 1px; */
+  width: 300px;
+  background-color: violet;
+  /* border-radius: 0.5em; */
+}
+
+.welcomeText h2 {
+  font-weight: 700;
+  width: 600px;
+  background-color: orange;
+  /* border-radius: 0.5em; */
+}
+
+.welcomeText a {
+  font-weight: 900;
+}
+
+.welcomeChicken {
+  /* border: solid 1px; */
+  /* background-color: turquoise; */
+  border-radius: 0.5em;
+  transform: translate(-470px, -40px);
+  z-index: -2;
+}
+
+.welcomeGraph {
+  /* border: solid 1px; */
+  /* background-color: brown; */
+  /* border-radius: 0.5em; */
+  margin-top: 10px;
+  width: 640px;
+  align-self: center;
+  z-index: 1;
+}
+
+.welcomeData {
+  /* border: solid 1px; */
+  /* background-color: magenta; */
+  /* border-radius: 0.5em; */
+  position: relative;
+  /* top: 0px; */
+  left: -360px;
+}
+
+.graph-flex-group {
+  display: flex;
+  /* background-color: greenyellow; */
 }
